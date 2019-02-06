@@ -8,7 +8,7 @@ var request = require('request').defaults({
     encoding: null
 });
 
-var CanvasImage = require('canvas').Image;
+var CanvasImage = require('canvas-prebuilt').Image;
 
 function stripQuerystring (url) {
     if (url.indexOf('?') !== -1) {
