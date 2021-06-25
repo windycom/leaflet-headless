@@ -18,19 +18,20 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "canvas-prebuilt": "^2.0.0-alpha.13",
-    "jsdom": "~9.8.3",
-    "leaflet": "^1.0.3",
-    "leaflet-image": "^0.4.0",
+    "canvas": "^2.8.0",
+    "jsdom": "^16.6.0",
+    "leaflet": "^1.7.1",
+    "node-leaflet-image": "^0.4.3",
     "request": "^2.65.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-leaflet": "0.0.12",
-    "eslint": "^3.12.2",
-    "image-diff": "^1.6.3",
-    "mapbox.js": "^3.0.1",
-    "mocha": "^2.2.1",
-    "mversion": "^1.10.1"
+    "chai": "^4.3.4",
+    "chai-leaflet": "^0.0.13",
+    "eslint": "^7.29.0",
+    "mapbox.js": "^3.3.1",
+    "mocha": "^9.0.1",
+    "mversion": "^2.0.1",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^4.0.1"
   }
 }
