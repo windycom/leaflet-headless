@@ -23,7 +23,7 @@ function cluster (zoom, callback) {
         var data = JSON.parse(content);
 
         var map = L.map(document.createElement('div'), {maxZoom: 12})
-                   .setView([38.5438691758, -92.5433345], zoom);
+            .setView([38.5438691758, -92.5433345], zoom);
 
         var dataLayer = L.geoJson(data);
         var clusterLayer = new L.MarkerClusterGroup();

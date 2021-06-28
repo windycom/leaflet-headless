@@ -65,7 +65,6 @@ if (!global.L) {
         var leafletImage = require('node-leaflet-image');
         var fs = require('fs');
 
-        console.log('AAAA');
         leafletImage(this, function (err, canvas) {
             if (err) {
                 console.error(err);

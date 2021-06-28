@@ -17,8 +17,8 @@ function mapboxGeojsonExample (filename, callback) {
     document.body.appendChild(element);
 
     var map = L.map(element.id).setView([37.8, -96], 4);
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://windytiles.mapy.cz/turist-en/{z}-{x}-{y}', {
+        attribution: '&copy; <a href="https://www.windy.com">Windy.com</a>',
     }).addTo(map);
 
     var geojson = [{

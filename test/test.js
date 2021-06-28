@@ -79,9 +79,8 @@ describe('Leaflet-headless', function () {
 		it('has a working saveImage() method', function (done) {
 			map.setView([10, 10], 3).setSize(200, 200);
 
-			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-					'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+			L.tileLayer('https://windytiles.mapy.cz/turist-en/{z}-{x}-{y}', {
+				attribution: '&copy; <a href="https://www.windy.com">Windy.com</a>',
 			}).addTo(map);
 
 			L.polyline([[10, 10], [0, 0]], {
@@ -119,10 +118,10 @@ describe('Leaflet-headless', function () {
 		it('L.TileLayer()', function () {
 			map.setView(latlng, 10);
 
-			var tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-					'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+			var tilelayer = L.tileLayer('https://windytiles.mapy.cz/turist-en/{z}-{x}-{y}', {
+				attribution: '&copy; <a href="https://www.windy.com">Windy.com</a>',
 			}).addTo(map);
+
 
 			map.hasLayer(tilelayer).should.be.true;
 		});

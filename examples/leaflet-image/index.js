@@ -29,8 +29,8 @@ function leafletImageExample (filename, callback) {
     L.marker([-12, 14]).addTo(map);
     L.marker([-12, -14]).addTo(map);
 
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://windytiles.mapy.cz/turist-en/{z}-{x}-{y}', {
+        attribution: '&copy; <a href="https://www.windy.com">Windy.com</a>',
     }).addTo(map);
 
     map.saveImage(filename, callback);

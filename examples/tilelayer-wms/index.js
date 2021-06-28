@@ -15,11 +15,13 @@ function tilelayerWmsExample (filename, callback) {
 
     var map = L.map(element.id).setView([30, -90], 4);
 
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://windytiles.mapy.cz/turist-en/{z}-{x}-{y}', {
+        attribution: '&copy; <a href="https://www.windy.com">Windy.com</a>',
+    }).addTo(map);
     L.tileLayer.wms('https://ahocevar.com/geoserver/wms', {
         layers: 'topp:states',
         transparent: true,
-        opacity: 0.1,
+        opacity: 0.5,
         format: 'image/png'
     }).addTo(map);
 
